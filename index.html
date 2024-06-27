@@ -33,11 +33,21 @@
     </nav>
 
     <!-- Add student Button -->
-    <div class="addButton">
-        <button type="button" class="btn btn-dark addStudentBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            + Add Student
-        </button>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col text-end">
+                <div class="addButton">
+                    <button type="button" class="btn btn-dark addStudentBtn" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        + Add Student
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
+    
+
+
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -50,19 +60,19 @@
                 <div class="modal-body">
                     <form id="studentForm">
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="stuName" placeholder="Student Name">
+                            <input type="text" class="form-control" id="stuName" placeholder="Student Name" required>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="gender" placeholder="Gender">
+                            <input type="text" class="form-control" id="gender" placeholder="Gender" required>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="dob" placeholder="DOB">
+                            <input type="text" class="form-control" id="dob" placeholder="DOB" required>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="address" placeholder="Address">
+                            <input type="text" class="form-control" id="address" placeholder="Address" required>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="contact" placeholder="Contact">
+                            <input type="text" class="form-control" id="contact" placeholder="Contact" required>
                         </div>
                     </form>
                     <button type="button" class="btn m-2 btn-primary btnModelAdd" onclick="addStudent()"
