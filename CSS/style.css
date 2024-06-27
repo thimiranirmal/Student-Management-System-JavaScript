@@ -1,0 +1,63 @@
+.input-with-image {
+    background: url('../Assets/Search.png') no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+    background-color: aliceblue;
+}
+
+.input-with-image::placeholder {
+    color: #999;
+    text-align: right;
+}
+
+.navbar {
+    background-color: rgb(4, 2, 16);
+}
+
+.nav-text {
+    color: white;
+}
+
+.addButton {
+    position: relative;
+    right: 0;
+}
+
+.addStudentBtn {
+    margin: 10px;
+}
+.container{
+    /* display: grid;
+    grid-template-columns: auto auto auto ;
+    justify-content: space-around; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 150px;
+    background-color: rgba(217, 217, 2, 0.979);
+    
+}
+.item{
+    margin: 20px;
+}
+
+.stu-image {
+    margin: 30px;
+}
+
+.card-body {
+    background-color: rgb(4, 2, 16);
+}
+
+.details{
+    color: aliceblue;
+    margin: 10px;
+    font-size: small;
+}
+
+.btnModelAdd{
+    width: 140px;
+}
